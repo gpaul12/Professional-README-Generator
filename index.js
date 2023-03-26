@@ -118,7 +118,7 @@ const questions = [
   },
   {
     type: "confirm",
-    name: "confirmContributors",
+    name: "confirmContributers",
     message: "Would you like to allow other developers to contribute?",
     default: true,
   },
