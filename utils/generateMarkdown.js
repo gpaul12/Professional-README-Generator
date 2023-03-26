@@ -100,6 +100,10 @@ function generateMarkdown(data) {
   ## [Contributing](#table-of-contents)
 
   ${renderContributerSection(data.confirmContributers, data.contribute)}
+
+  ## [Tests](#table-of-contents)
+
+  ${data.test}
   
 `;
 }
