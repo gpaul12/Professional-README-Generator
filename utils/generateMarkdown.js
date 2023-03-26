@@ -75,6 +75,15 @@ function generateMarkdown(data) {
   * [Tests](#test)
   * [Questions](#questions)
 
+  ## [Description](#table-of-contents)
+
+  ${data.what}
+
+  ${data.why}
+
+  ${data.how}
+
+  
 `;
 }
 
