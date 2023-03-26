@@ -159,13 +159,15 @@ const writeFile = (fileContent) => {
     });
   });
 };
+// TODO: Create a function to initialize app
 const init = () => {
   return inquirer.prompt(questions).then((readmeData) => {
     return readmeData;
   });
 };
 
-// TODO: Create a function to initialize app
-
 // Function call to initialize app
-init();
+init().then((readmeData) => {
+  console.log(readmeData);
+  return generateMarkdown(readmeData);
+});
