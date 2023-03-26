@@ -120,6 +120,14 @@ const questions = [
         return false;
       }
     },
+    validate: (contributerInput) => {
+      if (contributerInput) {
+        return true;
+      } else {
+        console.log("Please enter contributer quidelines!");
+        return false;
+      }
+    },
   },
 ];
 
