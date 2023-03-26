@@ -27,7 +27,7 @@
 
   ## [Usage](#table-of-contents)
 
-  test usage
+  test usage step
 
   For more information on how to add screenshots for examples, visit the following website:
   
@@ -51,4 +51,4 @@
 
   [GitHub](https://github.com/gpaul12)
 
-  [Email: undefined](mailto:undefined)
+  [Email: gpaul12@nc.rr.com](mailto:gpaul12@nc.rr.com)

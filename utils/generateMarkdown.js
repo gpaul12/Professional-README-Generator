@@ -1,11 +1,11 @@
-function renderContributerSection(confirmContributers, data) {
+function renderContributingSection(confirmContributers, data) {
   if (!confirmContributers) {
     return `
-    Thank you for your interest in assisting, however, we will not be accepting third party contributions.
+  Thank you for your interest in helping out; however, I will not be accepting contributions from third parties.
     `;
   } else {
     return `
-    ${data}
+  ${data}
     `;
   }
 }
@@ -13,9 +13,9 @@ function renderContributerSection(confirmContributers, data) {
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license !== "NO LICENSE") {
+  if (license !== "no license") {
     return `
-    ![badge](https://img.shields.io/badge/license-${license}-blue)
+  ![badge](https://img.shields.io/badge/license-${license}-blue)
     `;
   } else {
     return " ";
@@ -25,7 +25,7 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if (license !== "NO LICENSE") {
+  if (license !== "no license") {
     return `
   [${license}](https://choosealicense.com/licenses/${license})
     `;
@@ -36,22 +36,20 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license !== "NO LICENSE") {
+  if (license !== "no license") {
     return `
-    ## [License](#table-of-contents)
-
-    The application is covered under the following license:
-
-    ${renderLicenseLink(license)}
+  ## [License](#table-of-contents)
+  The application is covered under the following license:
+  ${renderLicenseLink(license)}
     `;
   } else {
     return " ";
   }
 }
 function renderLicenseTOC(license) {
-  if (license !== "NO LICENSE") {
+  if (license !== "no license") {
     return `
-    * [License](#license)
+  * [License](#license)
     `;
   } else {
     return " ";
@@ -62,7 +60,7 @@ function renderLicenseTOC(license) {
 function generateMarkdown(data) {
   return `
   # ${data.title}
-
+  
   ${renderLicenseBadge(data.license)}
 
   ## Table-of-Contents
@@ -72,9 +70,9 @@ function generateMarkdown(data) {
   * [Usage](#usage)
   ${renderLicenseTOC(data.license)}
   * [Contributing](#contributing)
-  * [Tests](#test)
+  * [Tests](#tests)
   * [Questions](#questions)
-
+  
   ## [Description](#table-of-contents)
 
   ${data.what}
@@ -90,16 +88,16 @@ function generateMarkdown(data) {
   ## [Usage](#table-of-contents)
 
   ${data.usage}
-
+  
   For more information on how to add screenshots for examples, visit the following website:
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-
+  
   ${renderLicenseSection(data.license)}
 
   ## [Contributing](#table-of-contents)
-
-  ${renderContributerSection(data.confirmContributers, data.contribute)}
+  
+  ${renderContributingSection(data.confirmContributers, data.contribute)}
 
   ## [Tests](#table-of-contents)
 
@@ -107,10 +105,10 @@ function generateMarkdown(data) {
 
   ## [Questions](#table-of-contents)
 
-  Please contact me via the following links:
+  Please contact me using the following links:
 
   [GitHub](https://github.com/${data.githubUsername})
-
+  
   [Email: ${data.email}](mailto:${data.email})
 `;
 }
