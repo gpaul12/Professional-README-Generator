@@ -20,7 +20,7 @@ Click the repository link below. Download the zip file and copy it to a director
 
 [README Generator Download Link](https://github.com/gpaul12/Professional-README-Generator)
 
-[Tutorial on how to use app]
+[Tutorial on how to use app](https://drive.google.com/file/d/1Y4uP2k45qfM3GBDmkXzQTJ9JY_DK8Mpq/view)
 
 README Screenshot No License
 

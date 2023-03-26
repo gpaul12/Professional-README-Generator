@@ -27,7 +27,7 @@
 
   ## [Installation](#table-of-contents)
 
-  test install
+  test installtion
 
   ## [Usage](#table-of-contents)
 
