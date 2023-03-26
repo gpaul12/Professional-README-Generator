@@ -18,6 +18,19 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "githubUsername",
+    message: "What is your gitHub Username (Required)",
+    validate: (githubInput) => {
+      if (githubInput) {
+        return true;
+      } else {
+        console.log("Please enter your ZGitHub username!");
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
