@@ -171,3 +171,6 @@ init().then((readmeData) => {
   console.log(readmeData);
   return generateMarkdown(readmeData);
 });
+.then(pageMD => {
+    return writeFile(pageMD);
+})
