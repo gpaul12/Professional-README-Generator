@@ -96,6 +96,11 @@ function generateMarkdown(data) {
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
 
   ${renderLicenseSection(data.license)}
+
+  ## [Contributing](#table-of-contents)
+
+  ${renderContributerSection(data.confirmContributers, data.contribute)}
+  
 `;
 }
 
