@@ -57,6 +57,19 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "how",
+    message: "How will someone use this? (required)",
+    validate: (howInput) => {
+      if (howInput) {
+        return true;
+      } else {
+        console.log("Please enter how someone will use this!");
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
