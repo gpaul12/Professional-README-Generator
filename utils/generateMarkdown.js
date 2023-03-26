@@ -70,7 +70,10 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  $
+  ${renderLicenseTOC(data.license)}
+  * [Contributing](#contributing)
+  * [Tests](#test)
+  * [Questions](#questions)
 
 `;
 }
