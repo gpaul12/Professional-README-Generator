@@ -103,6 +103,12 @@ const questions = [
     message: "Which license will you use for your project?",
     choices: ["AGPL", "APACHE", "MIT", "NO LICENSE"],
   },
+  {
+    type: "confirm",
+    name: "confirmContributors",
+    message: "Would you like to allow other developers to contribute?",
+    default: true,
+  },
 ];
 
 // TODO: Create a function to write README file
