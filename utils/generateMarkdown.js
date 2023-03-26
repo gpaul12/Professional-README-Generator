@@ -104,7 +104,14 @@ function generateMarkdown(data) {
   ## [Tests](#table-of-contents)
 
   ${data.test}
-  
+
+  ## [Questions](#table-of-contents)
+
+  Please contact me via the following links:
+
+  [GitHub](https://github.com/${data.githubUsername})
+
+  [Email: ${data.email}](mailto:${data.email})
 `;
 }
 
