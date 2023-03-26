@@ -31,6 +31,19 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "outCome",
+    message: "What is your project and what problems will it solve? (Required)",
+    validate: (outComeInput) => {
+      if (outComeInput) {
+        return true;
+      } else {
+        console.log("Please enter what your project outcome is!");
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
