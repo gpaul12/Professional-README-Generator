@@ -114,7 +114,7 @@ const questions = [
     type: "list",
     name: "license",
     message: "Which license will you use for your project?",
-    choices: ["AGPL", "APACHE", "MIT", "NO LICENSE"],
+    choices: ["agpl", "apache", "mit", "no license"],
   },
   {
     type: "confirm",
