@@ -33,13 +33,26 @@ const questions = [
   },
   {
     type: "input",
-    name: "outCome",
+    name: "what",
     message: "What is your project and what problems will it solve? (Required)",
-    validate: (outComeInput) => {
-      if (outComeInput) {
+    validate: (whatInput) => {
+      if (whatInput) {
         return true;
       } else {
-        console.log("Please enter what your project outcome is!");
+        console.log("Please enter what your project is!");
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "why",
+    message: "Why did you create this project? (Required)",
+    validate: (whyInput) => {
+      if (whyInput) {
+        return true;
+      } else {
+        console.log("Please enter why you created this project!");
         return false;
       }
     },
