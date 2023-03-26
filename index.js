@@ -84,6 +84,19 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "usage",
+    message: "Please provide instructions and examples for use? (required)",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        console.log("Please enter you use instructions!");
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
