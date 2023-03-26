@@ -48,6 +48,15 @@ function renderLicenseSection(license) {
     return " ";
   }
 }
+function renderLicenseTOC(license) {
+  if (license !== "NO LICENSE") {
+    return `
+    * [License](#license)
+    `;
+  } else {
+    return " ";
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -61,6 +70,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
+  $
 
 `;
 }
