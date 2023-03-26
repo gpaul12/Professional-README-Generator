@@ -70,6 +70,20 @@ const questions = [
       }
     },
   },
+  {
+    type: "input",
+    name: "installation",
+    message:
+      "Please provide step by step installation instructions for your project. (required)",
+    validate: (installationInput) => {
+      if (installationInput) {
+        return true;
+      } else {
+        console.log("Please enter your installation instructions!");
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
