@@ -145,7 +145,20 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeFile = (fileContent) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./dist/generate-README.md", fileContent, (err) => {
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: "Your file has been created!",
+      });
+    });
+  });
+};
 
 // TODO: Create a function to initialize app
 function init() {}
