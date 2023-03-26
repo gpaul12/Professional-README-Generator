@@ -167,10 +167,14 @@ const init = () => {
 };
 
 // Function call to initialize app
-init().then((readmeData) => {
-  console.log(readmeData);
-  return generateMarkdown(readmeData);
-});
-.then(pageMD => {
+init()
+  .then((readmeData) => {
+    console.log(readmeData);
+    return generateMarkdown(readmeData);
+  })
+  .then((pageMD) => {
     return writeFile(pageMD);
-})
+  })
+  .then((writeFileResponse) => {
+    console.log(writeFileResponse.message);
+  });
