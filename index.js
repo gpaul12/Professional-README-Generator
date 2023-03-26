@@ -109,6 +109,18 @@ const questions = [
     message: "Would you like to allow other developers to contribute?",
     default: true,
   },
+  {
+    type: "input",
+    name: "contribute",
+    message: "Please provide quidelines for contributing. (required)",
+    when: ({ confirmContributers }) => {
+      if (confirmContributers) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
 ];
 
 // TODO: Create a function to write README file
